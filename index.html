@@ -7,178 +7,197 @@
 <title>St Mary's Budadiri Girls Secondary School</title>
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f9;
-}
-
-/* TOP BAR */
-.topbar {
-  background: #f4b400;
-  padding: 8px;
-  text-align: center;
-  font-weight: bold;
+body{
+margin:0;
+font-family:Arial;
+background:#f4f1ea;
 }
 
 /* HEADER */
-header {
-  background: navy;
-  color: white;
-  text-align: center;
-  padding: 20px;
+header{
+background:#0b1f3a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* LOGO DESIGN */
+.logo{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid gold;
+object-fit:cover;
+margin-top:10px;
+animation:spin 10s linear infinite;
+}
+
+@keyframes spin{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
+
+/* TOP BAR */
+.topbar{
+background:gold;
+color:black;
+text-align:center;
+padding:8px;
+font-weight:bold;
 }
 
 /* NAV */
-nav {
-  background: #003366;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+nav{
+background:#123a63;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
 }
 
-nav a {
-  color: white;
-  padding: 12px 15px;
-  text-decoration: none;
-  font-weight: bold;
+nav a{
+color:white;
+padding:12px;
+text-decoration:none;
+font-weight:bold;
 }
 
-nav a:hover {
-  background: gold;
-  color: black;
+nav a:hover{
+background:gold;
+color:black;
 }
 
 /* HERO SLIDESHOW */
-.hero {
-  position: relative;
-  height: 380px;
-  overflow: hidden;
+.hero{
+position:relative;
+height:420px;
+overflow:hidden;
 }
 
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 1s;
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+opacity:0;
+transition:1.2s ease-in-out;
 }
 
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.slide img{
+width:100%;
+height:100%;
+object-fit:cover;
 }
 
-.slide.active {
-  opacity: 1;
+.slide.active{
+opacity:1;
 }
 
-.hero-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
+/* TEXT OVERLAY */
+.hero-text{
+position:absolute;
+bottom:20px;
+left:20px;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:10px;
+border-radius:8px;
 }
 
 /* SECTIONS */
-section {
-  padding: 40px 20px;
-  text-align: center;
+section{
+padding:40px 20px;
+text-align:center;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  margin: auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.card{
+background:white;
+padding:20px;
+max-width:900px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* GALLERY */
-.gallery {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
+.gallery{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
 }
 
-.gallery img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+.gallery img{
+width:280px;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+transition:0.3s;
 }
 
-/* FORM */
-input, textarea {
-  width: 90%;
-  padding: 10px;
-  margin: 8px 0;
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 /* FOOTER */
-footer {
-  background: navy;
-  color: white;
-  text-align: center;
-  padding: 15px;
+footer{
+background:#0b1f3a;
+color:white;
+text-align:center;
+padding:15px;
 }
 
 /* ANIMATION */
-.fade {
-  animation: fade 1s ease-in-out;
+.fade{
+animation:fade 1.2s ease-in-out;
 }
 
-@keyframes fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <div class="topbar">
 📍 Sironko District | 📞 0772343951 / 0788968812 | 📧 budadirigirlsss@gmail.com
 </div>
 
+<!-- HEADER WITH LOGO -->
 <header>
+<img src="image1.jpg" class="logo" alt="School Logo">
 <h1>ST MARY'S BUDADIRI GIRLS SECONDARY SCHOOL</h1>
 <p><b>Motto:</b> With Determination It Can Be Done</p>
 </header>
 
+<!-- NAV -->
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#admission">Admission</a>
 <a href="#ict">ICT Club</a>
-<a href="#results">Results</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<!-- HERO -->
+<!-- HERO SLIDESHOW -->
 <div class="hero" id="home">
 
-  <div class="slide active">
-    <img src="file_00000000a63471f487dcf28b6064e54d">
-    <div class="hero-text">ICT Learning Environment</div>
-  </div>
+<div class="slide active">
+<img src="image1.jpg">
+<div class="hero-text">Modern ICT Learning Environment</div>
+</div>
 
-  <div class="slide">
-    <img src="file_0000000039f871f488c8e2c0268fede4">
-    <div class="hero-text">Students in Computer Lab</div>
-  </div>
+<div class="slide">
+<img src="image2.jpg">
+<div class="hero-text">Students Engaged in Computer Studies</div>
+</div>
 
-  <div class="slide">
-    <img src="file_00000000560c71f484385e902ff7fadf">
-    <div class="hero-text">Modern Education for Girls</div>
-  </div>
+<div class="slide">
+<img src="image3.jpg">
+<div class="hero-text">Empowering Girls Through Education</div>
+</div>
 
 </div>
 
@@ -188,7 +207,7 @@ footer {
 <h2>About Our School</h2>
 <p>
 St Mary's Budadiri Girls Secondary School is located in Sironko District, Budadiri Town Council.
-We provide quality education, ICT skills, discipline and leadership training.
+We offer quality education, ICT skills, discipline and leadership training for girls.
 </p>
 </div>
 </section>
@@ -196,11 +215,10 @@ We provide quality education, ICT skills, discipline and leadership training.
 <!-- ADMISSION -->
 <section id="admission">
 <div class="card fade">
-<h2>Online Admission Form</h2>
-<input placeholder="Student Name"><br>
-<input placeholder="Class Applying For"><br>
-<input placeholder="Parent Contact"><br>
-<textarea placeholder="Additional Information"></textarea><br>
+<h2>Online Admission</h2>
+<input placeholder="Student Name"><br><br>
+<input placeholder="Class Applying For"><br><br>
+<input placeholder="Parent Contact"><br><br>
 <button>Submit Application</button>
 </div>
 </section>
@@ -208,33 +226,23 @@ We provide quality education, ICT skills, discipline and leadership training.
 <!-- ICT -->
 <section id="ict">
 <div class="card fade">
-<h2>ICT Club Activities</h2>
+<h2>ICT Club</h2>
 <p>
 ✔ Web Design<br>
-✔ Coding<br>
-✔ Graphics Design<br>
-✔ Computer Basics
+✔ Programming Basics<br>
+✔ Graphic Design<br>
+✔ Computer Literacy
 </p>
-</div>
-</section>
-
-<!-- RESULTS -->
-<section id="results">
-<div class="card fade">
-<h2>Student Results</h2>
-<p>Results system coming soon (upgrade available)</p>
 </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
 <h2>School Gallery</h2>
-
 <div class="gallery">
-<img src="2026-102904.jpg">
-<img src="20260210-102959.jpg">
-<img src="20260210-103130.jpg">
-<img src="20260330-080019.jpg">
+<img src="image1.jpg">
+<img src="image2.jpg">
+<img src="image3.jpg">
 </div>
 </section>
 
@@ -257,9 +265,9 @@ let slides = document.querySelectorAll(".slide");
 let index = 0;
 
 setInterval(() => {
-  slides.forEach(s => s.classList.remove("active"));
-  index = (index + 1) % slides.length;
-  slides[index].classList.add("active");
+slides.forEach(s => s.classList.remove("active"));
+index = (index + 1) % slides.length;
+slides[index].classList.add("active");
 }, 4000);
 </script>
 
